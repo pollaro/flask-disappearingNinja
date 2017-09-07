@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Ninja Turtles!</title>
+    </head>
+    <body>
+        <img src="{{url_for('static',filename=turtle)}}" alt="">
+        <script type="text/javascript">
+            switch ( {{ color }} ) {
+                console.log( {{ color }} );
+                case "blue":
+                    turtle = 'images/leonardo.jpg'
+                    break;
+                case "red":
+                    turtle = 'images/raphael.jpg'
+                    break;
+                case "orange":
+                    turtle = 'images/michelangelo.jpg'
+                    break;
+                case "purple":
+                    turtle = 'images/donatello.jpg'
+                    break;
+                default:
+                    turtle = 'images/notapril.jpg'
+            }
+        </script>
+    </body>
+</html>

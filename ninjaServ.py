@@ -19,4 +19,6 @@ def showColor(color):
         return render_template('purple.html')
     else:
         return render_template('not.html')
+    # return render_template('color.html',color=color)
+
 app.run(debug=True)
